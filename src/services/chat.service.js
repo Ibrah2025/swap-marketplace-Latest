@@ -16,17 +16,17 @@ class ChatService {
         participantName: "Anna Schmidt",
         itemId: "item1",
         itemTitle: "iPhone 12",
-        lastMessage: "Ist der Artikel noch verfügbar?",
+        lastMessage: "Ist der Artikel noch verfgbar?",
         lastMessageTime: new Date(Date.now() - 3600000).toISOString(),
         unread: 2
       },
       {
         id: "conv2",
         participantId: "user3",
-        participantName: "Max Müller",
+        participantName: "Max Mller",
         itemId: "item2",
         itemTitle: "MacBook Air",
-        lastMessage: "Können wir tauschen?",
+        lastMessage: "Knnen wir tauschen?",
         lastMessageTime: new Date(Date.now() - 7200000).toISOString(),
         unread: 0
       }
@@ -40,11 +40,11 @@ class ChatService {
     return {
       conv1: [
         { id: "m1", senderId: "user2", text: "Hallo, ist der iPhone 12 noch da?", time: new Date(Date.now() - 7200000).toISOString() },
-        { id: "m2", senderId: "current", text: "Ja, noch verfügbar!", time: new Date(Date.now() - 3700000).toISOString() },
-        { id: "m3", senderId: "user2", text: "Ist der Artikel noch verfügbar?", time: new Date(Date.now() - 3600000).toISOString() }
+        { id: "m2", senderId: "current", text: "Ja, noch verfgbar!", time: new Date(Date.now() - 3700000).toISOString() },
+        { id: "m3", senderId: "user2", text: "Ist der Artikel noch verfgbar?", time: new Date(Date.now() - 3600000).toISOString() }
       ],
       conv2: [
-        { id: "m4", senderId: "user3", text: "Können wir tauschen?", time: new Date(Date.now() - 7200000).toISOString() }
+        { id: "m4", senderId: "user3", text: "Knnen wir tauschen?", time: new Date(Date.now() - 7200000).toISOString() }
       ]
     };
   }

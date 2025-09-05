@@ -11,6 +11,10 @@ import { PhotoUploadComponent } from "./components/PhotoUpload.js";
 import { SearchComponent } from "./components/Search.js";
 import chatService from "./services/chat.service.js";
 
+window.__imgFallback = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect width='100%25' height='100%25' fill='%23f3f4f6'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,Segoe UI,system-ui' font-size='14' fill='%239ca3af'>No Image</text></svg>";
+
+import { SwapsPage } from './components/SwapsPage.js';
+
 const app = document.getElementById("app");
 let photoUploadComponent = null;
 
@@ -236,7 +240,7 @@ async function loadItems() {
       <img src="${item.photoURL}" style="width: 100%; height: 120px; object-fit: cover;">
       <div style="padding: 10px;">
         <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">${item.title}</div>
-        <div style="font-size: 11px; color: #666;">📍 ${item.location}</div>
+        <div style="font-size: 11px; color: #666;"> ${item.location}</div>
       </div>
     </div>
   `).join('');
@@ -280,11 +284,6 @@ window.showSearch = () => {
   document.getElementById("modalContainer").innerHTML = searchComponent.render();
 };
 
-window.showSwaps = () => {
-  alert("Tausch-Übersicht - Kommt bald!");
-  setActiveNav("swaps");
-};
-
 window.showFavorites = () => {
   alert("Favoriten - Kommt bald!");
   setActiveNav("favorites");
@@ -292,7 +291,7 @@ window.showFavorites = () => {
 
 window.showProfile = () => {
   setActiveNav("me");
-  if (confirm("Möchten Sie sich abmelden?")) {
+  if (confirm("Mchten Sie sich abmelden?")) {
     firebaseService.logout();
   }
 };
@@ -342,7 +341,7 @@ window.submitItem = async () => {
   const locationEl = document.getElementById("itemLocation");
   const title = titleEl ? titleEl.value : "";
   const category = categoryEl ? categoryEl.value : "";
-  if (!title || !category) { alert("Bitte fülle alle Pflichtfelder aus"); return; }
+  if (!title || !category) { alert("Bitte flle alle Pflichtfelder aus"); return; }
   const itemData = {
     title,
     category,
@@ -373,3 +372,16 @@ document.addEventListener("change", (e) => {
 });
 
 window.firebaseService = firebaseService;
+
+window.showSwaps = () => {
+  const mc = document.getElementById("modalContainer");
+  if (!mc) { console.warn("modalContainer not found"); return; }
+  window.__swaps = new SwapsPage();
+  mc.innerHTML = window.__swaps.render();
+  if (typeof setActiveNav === "function") setActiveNav("swaps");
+};
+
+window.closeSwapsPage = () => {
+  const mc = document.getElementById("modalContainer");
+  if (mc) mc.innerHTML = "";
+};

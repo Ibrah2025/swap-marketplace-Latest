@@ -14,7 +14,7 @@ export class ChatWindow {
       <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: white; z-index: 1001; display: flex; flex-direction: column;">
         <!-- Chat Header -->
         <header style="background: #007185; color: white; padding: 12px; display: flex; align-items: center; gap: 12px;">
-          <button onclick="window.closeChat()" style="background: none; border: none; color: white; font-size: 24px;">←</button>
+          <button onclick="window.closeChat()" style="background: none; border: none; color: white; font-size: 24px;"></button>
           <div style="flex: 1;">
             <div style="font-weight: 600;">${this.conversation.participantName}</div>
             <div style="font-size: 12px; opacity: 0.8;">${this.conversation.itemTitle}</div>
@@ -32,7 +32,7 @@ export class ChatWindow {
                  style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 20px; outline: none;">
           <button onclick="window.sendMessage('${this.conversationId}')" 
                   style="background: #007185; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-            ➤
+            
           </button>
         </div>
       </div>

@@ -13,7 +13,7 @@ export class CategoryPage {
       <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #f5f5f5; z-index: 1000; overflow-y: auto;">
         <header style="background: #007185; color: white; padding: 12px; position: sticky; top: 0; z-index: 10;">
           <div style="display: flex; align-items: center;">
-            <button onclick="window.closeCategoryPage()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">←</button>
+            <button onclick="window.closeCategoryPage()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;"></button>
             <h1 style="margin: 0; font-size: 20px;">${this.category.icon} ${this.category.name}</h1>
           </div>
         </header>
@@ -48,10 +48,10 @@ export class CategoryPage {
         <img src="${item.photoURL}" style="width: 100%; height: 150px; object-fit: cover;">
         <div style="padding: 10px;">
           <div style="font-weight: 600; font-size: 14px; color: #232f3e;">${item.title}</div>
-          <div style="color: #666; font-size: 12px; margin-top: 4px;">✓ ${item.condition}</div>
-          <div style="color: #007185; font-size: 12px; margin-top: 4px;">📍 ${item.location}</div>
+          <div style="color: #666; font-size: 12px; margin-top: 4px;"> ${item.condition}</div>
+          <div style="color: #007185; font-size: 12px; margin-top: 4px;"> ${item.location}</div>
           <div style="background: #FFA41C; color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; margin-top: 8px; text-align: center;">
-            Tausch möglich
+            Tausch mglich
           </div>
         </div>
       </div>

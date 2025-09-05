@@ -1,4 +1,4 @@
-﻿import firebaseService from "../services/firebase.service.mock.js"; // Using mock for now
+import firebaseService from "../services/firebase.service.mock.js"; // Using mock for now
 import store from "../store/store.js";
 
 export class AuthComponent {
@@ -11,7 +11,7 @@ export class AuthComponent {
       <div style="max-width: 400px; margin: 50px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
         <h2>${this.isLoginMode ? "Anmelden" : "Registrieren"}</h2>
         <p style="background: #fff3cd; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-size: 14px;">
-          🔧 Development Mode - Any email/password will work
+           Development Mode - Any email/password will work
         </p>
         <form id="authForm" style="margin-top: 20px;">
           ${!this.isLoginMode ? `

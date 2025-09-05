@@ -11,7 +11,7 @@ export class PhotoUploadComponent {
         <!-- Header -->
         <header style="background: #007185; color: white; padding: 12px; display: flex; align-items: center; justify-content: space-between;">
           <div style="display: flex; align-items: center;">
-            <button onclick="window.closePhotoUpload()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">←</button>
+            <button onclick="window.closePhotoUpload()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">Ã¢â€ Â</button>
             <h1 style="margin: 0; font-size: 20px;">Neuer Artikel</h1>
           </div>
           <button onclick="window.submitItem()" style="background: none; border: none; color: white; font-weight: 600;">
@@ -40,15 +40,15 @@ export class PhotoUploadComponent {
           <div style="margin-bottom: 16px;">
             <label style="display: block; margin-bottom: 8px; font-weight: 600;">Kategorie *</label>
             <select id="itemCategory" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
-              <option value="">Wähle Kategorie</option>
-              <option value="elektronik">📱 Elektronik</option>
-              <option value="mode">👗 Mode</option>
-              <option value="haushalt">🏠 Haushalt</option>
-              <option value="sport">⚽ Sport</option>
-              <option value="buecher">📚 Bücher</option>
-              <option value="baby">👶 Baby & Kind</option>
-              <option value="heimwerken">🔧 Heimwerken</option>
-              <option value="haustiere">🐕 Haustiere</option>
+              <option value="">W\u00e4hle Kategorie</option>
+              <option value="elektronik"> Elektronik</option>
+              <option value="mode"> Mode</option>
+              <option value="haushalt"> Haushalt</option>
+              <option value="sport"> Sport</option>
+              <option value="buecher"> Buecher</option>
+              <option value="baby"> Baby & Kind</option>
+              <option value="heimwerken"> Heimwerken</option>
+              <option value="haustiere"> Haustiere</option>
             </select>
           </div>
           
@@ -56,21 +56,21 @@ export class PhotoUploadComponent {
           <div style="margin-bottom: 16px;">
             <label style="display: block; margin-bottom: 8px; font-weight: 600;">Zustand *</label>
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
-              <button onclick="window.selectCondition('new')" id="cond-new" 
+              <button onclick="window.selectCondition('new')" id="cond-new" type="button" 
                       style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; background: white;">
-                ✨ Wie neu
+                 Wie neu
               </button>
-              <button onclick="window.selectCondition('very-good')" id="cond-very-good"
+              <button onclick="window.selectCondition('very-good')" id="cond-very-good" type="button"
                       style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; background: white;">
-                ✓ Sehr gut
+                 Sehr gut
               </button>
-              <button onclick="window.selectCondition('good')" id="cond-good"
+              <button onclick="window.selectCondition('good')" id="cond-good" type="button"
                       style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; background: white;">
-                👍 Gut
+                 Gut
               </button>
-              <button onclick="window.selectCondition('fair')" id="cond-fair"
+              <button onclick="window.selectCondition('fair')" id="cond-fair" type="button"
                       style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; background: white;">
-                👌 Akzeptabel
+                 Akzeptabel
               </button>
             </div>
           </div>
@@ -84,8 +84,8 @@ export class PhotoUploadComponent {
           
           <!-- Want in Return -->
           <div style="margin-bottom: 16px;">
-            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Was möchtest du dafür? *</label>
-            <input type="text" id="wantInReturn" placeholder="z.B. Tablet, Laptop oder ähnliches"
+            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Was M\u00f6chtest du dafuer? *</label>
+            <input type="text" id="wantInReturn" placeholder="z.B. Tablet, Laptop oder aehnliches"
                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
           </div>
           
@@ -105,11 +105,11 @@ export class PhotoUploadComponent {
           <div style="background: white; width: 100%; border-radius: 20px 20px 0 0; padding: 20px;">
             <button onclick="window.choosePhotoSource('camera')" 
                     style="width: 100%; padding: 16px; margin-bottom: 10px; background: #007185; color: white; border: none; border-radius: 8px; font-size: 16px;">
-              📷 Kamera
+               Kamera
             </button>
             <button onclick="window.choosePhotoSource('gallery')"
                     style="width: 100%; padding: 16px; margin-bottom: 10px; background: #007185; color: white; border: none; border-radius: 8px; font-size: 16px;">
-              🖼️ Galerie
+               Galerie
             </button>
             <button onclick="window.closePhotoSourceModal()"
                     style="width: 100%; padding: 16px; background: #f5f5f5; border: none; border-radius: 8px; font-size: 16px;">
@@ -132,7 +132,7 @@ export class PhotoUploadComponent {
           <button onclick="window.removePhoto(${i})" 
                   style="position: absolute; top: 4px; right: 4px; background: rgba(0,0,0,0.5); color: white; 
                          border: none; border-radius: 50%; width: 24px; height: 24px; font-size: 16px;">
-            ×
+            
           </button>
         </div>
       `;
@@ -145,8 +145,8 @@ export class PhotoUploadComponent {
                 style="width: 100%; height: 100px; border: 2px dashed #ddd; border-radius: 8px; 
                        background: #f5f5f5; display: flex; align-items: center; justify-content: center; cursor: pointer;">
           <div>
-            <div style="font-size: 24px;">📷</div>
-            <div style="font-size: 12px; color: #666;">Foto hinzufügen</div>
+            <div style="font-size: 24px;"></div>
+            <div style="font-size: 12px; color: #666;">Foto hinzuf\u00fcgen</div>
           </div>
         </button>
       `;
@@ -181,3 +181,36 @@ export class PhotoUploadComponent {
 }
 
 export let currentPhotoUpload = null;
+
+/* Zustand selection handler (idempotent) */
+if (!window.selectCondition) {
+  window.selectCondition = function(key) {
+    const all = ['cond-new','cond-very-good','cond-good','cond-fair'];
+    all.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const active = (
+        (key === 'new'       && id === 'cond-new') ||
+        (key === 'very-good' && id === 'cond-very-good') ||
+        (key === 'good'      && id === 'cond-good') ||
+        (key === 'fair'      && id === 'cond-fair')
+      );
+      el.style.borderColor = active ? '#ff9900' : '#e5e7eb';
+      el.style.background  = active ? '#fff7ed' : '#ffffff';
+      el.style.boxShadow   = active ? '0 0 0 3px rgba(255,153,0,0.15)' : 'none';
+    });
+
+    // Persist value for submit
+    window.__selectedCondition = key;
+    let hidden = document.getElementById('conditionValue');
+    if (!hidden) {
+      hidden = document.createElement('input');
+      hidden.type = 'hidden';
+      hidden.id   = 'conditionValue';
+      hidden.name = 'condition';
+      const grid = document.getElementById('cond-new')?.parentElement;
+      (grid?.parentElement || document.body).appendChild(hidden);
+    }
+    hidden.value = key;
+  };
+}

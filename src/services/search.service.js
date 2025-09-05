@@ -81,8 +81,8 @@ class SearchService {
   getSearchSuggestions(query) {
     const suggestions = [
       'iPhone', 'Samsung', 'Laptop', 'MacBook', 'iPad',
-      'Fahrrad', 'E-Bike', 'Bücher', 'Spielzeug', 'Kleidung',
-      'Schuhe', 'Möbel', 'Sofa', 'Tisch', 'PlayStation'
+      'Fahrrad', 'E-Bike', 'Bcher', 'Spielzeug', 'Kleidung',
+      'Schuhe', 'Mbel', 'Sofa', 'Tisch', 'PlayStation'
     ];
     
     if (!query) return suggestions.slice(0, 5);

@@ -24,7 +24,7 @@ export class ItemsList {
         <div style="padding: 15px;">
           <h3 style="margin: 0 0 8px; color: #232f3e;">${item.title}</h3>
           <p style="margin: 0 0 4px; color: #666; font-size: 14px;">Condition: ${item.condition || "Good"}</p>
-          <p style="margin: 0 0 8px; color: #007185; font-weight: 500;">📍 ${item.location || "Berlin"}</p>
+          <p style="margin: 0 0 8px; color: #007185; font-weight: 500;"> ${item.location || "Berlin"}</p>
           <button style="width: 100%; padding: 8px; background: #ff9900; color: white; border: none; border-radius: 4px; cursor: pointer;">
             Propose Swap
           </button>

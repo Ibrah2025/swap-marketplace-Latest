@@ -14,11 +14,11 @@ export class SearchComponent {
         <!-- Header with Search Bar -->
         <header style="background: #007185; padding: 12px; position: sticky; top: 0; z-index: 10;">
           <div style="display: flex; align-items: center; gap: 10px;">
-            <button onclick="window.closeSearch()" style="background: none; border: none; color: white; font-size: 24px;">←</button>
+            <button onclick="window.closeSearch()" style="background: none; border: none; color: white; font-size: 24px;"></button>
             <input type="text" id="searchInput" placeholder="Suche nach Artikeln..." 
                    style="flex: 1; padding: 10px; border: none; border-radius: 20px; font-size: 16px;"
                    oninput="window.handleSearch(this.value)">
-            <button onclick="window.toggleFilters()" style="background: none; border: none; color: white; font-size: 20px;">⚙️</button>
+            <button onclick="window.toggleFilters()" style="background: none; border: none; color: white; font-size: 20px;"></button>
           </div>
         </header>
         
@@ -30,12 +30,12 @@ export class SearchComponent {
             <select id="filterCategory" onchange="window.applyFilters()" 
                     style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 8px;">
               <option value="">Alle Kategorien</option>
-              <option value="elektronik">📱 Elektronik</option>
-              <option value="mode">👗 Mode</option>
-              <option value="haushalt">🏠 Haushalt</option>
-              <option value="sport">⚽ Sport</option>
-              <option value="buecher">📚 Bücher</option>
-              <option value="baby">👶 Baby & Kind</option>
+              <option value="elektronik"> Elektronik</option>
+              <option value="mode"> Mode</option>
+              <option value="haushalt"> Haushalt</option>
+              <option value="sport"> Sport</option>
+              <option value="buecher"> Bcher</option>
+              <option value="baby"> Baby & Kind</option>
             </select>
           </div>
           
@@ -44,7 +44,7 @@ export class SearchComponent {
             <label style="display: block; font-size: 14px; margin-bottom: 6px; font-weight: 600;">Zustand</label>
             <select id="filterCondition" onchange="window.applyFilters()"
                     style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 8px;">
-              <option value="">Alle Zustände</option>
+              <option value="">Alle Zustnde</option>
               <option value="new">Wie neu</option>
               <option value="very-good">Sehr gut</option>
               <option value="good">Gut</option>
@@ -68,7 +68,7 @@ export class SearchComponent {
             <select id="sortBy" onchange="window.applyFilters()"
                     style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 8px;">
               <option value="newest">Neueste zuerst</option>
-              <option value="nearest">In der Nähe</option>
+              <option value="nearest">In der Nhe</option>
               <option value="title">Alphabetisch</option>
             </select>
           </div>
@@ -81,7 +81,7 @@ export class SearchComponent {
             <button onclick="window.searchFor('iPhone')" style="padding: 6px 12px; background: white; border: 1px solid #ddd; border-radius: 16px; font-size: 14px;">iPhone</button>
             <button onclick="window.searchFor('Laptop')" style="padding: 6px 12px; background: white; border: 1px solid #ddd; border-radius: 16px; font-size: 14px;">Laptop</button>
             <button onclick="window.searchFor('Fahrrad')" style="padding: 6px 12px; background: white; border: 1px solid #ddd; border-radius: 16px; font-size: 14px;">Fahrrad</button>
-            <button onclick="window.searchFor('Bücher')" style="padding: 6px 12px; background: white; border: 1px solid #ddd; border-radius: 16px; font-size: 14px;">Bücher</button>
+            <button onclick="window.searchFor('Bcher')" style="padding: 6px 12px; background: white; border: 1px solid #ddd; border-radius: 16px; font-size: 14px;">Bcher</button>
           </div>
         </div>
         

@@ -18,7 +18,7 @@ export class MessagesListPage {
         <div style="padding-bottom: 20px;">
           ${conversations.length === 0 ? `
             <div style="text-align: center; padding: 40px; color: #666;">
-              <div style="font-size: 48px; opacity: 0.3;">💬</div>
+              <div style="font-size: 48px; opacity: 0.3;"></div>
               <p>Noch keine Nachrichten</p>
               <p style="font-size: 14px; color: #999;">Starte einen Chat, indem du bei einem Artikel "Nachricht senden" klickst</p>
             </div>
@@ -34,7 +34,7 @@ export class MessagesListPage {
     return `
       <div onclick="window.openChat('${conv.id}')" style="background: white; padding: 12px; border-bottom: 1px solid #e5e7eb; cursor: pointer; display: flex; gap: 12px;">
         <div style="width: 50px; height: 50px; background: #e5e7eb; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px;">
-          👤
+          
         </div>
         <div style="flex: 1;">
           <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">

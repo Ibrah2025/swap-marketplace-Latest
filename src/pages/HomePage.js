@@ -49,7 +49,7 @@ export class HomePage {
           <h2>Neueste Tauschangebote</h2>
           <div class="feed-filters">
             <button class="filter-chip active" data-filter="all">Alle</button>
-            <button class="filter-chip" data-filter="nearby">In der Nähe</button>
+            <button class="filter-chip" data-filter="nearby">In der Nhe</button>
             <button class="filter-chip" data-filter="today">Heute</button>
           </div>
         </div>
@@ -167,7 +167,7 @@ export class HomePage {
         </div>
         <div class="item-info">
           <h3 class="item-title">${item.title}</h3>
-          <p class="item-location">📍 ${item.location}</p>
+          <p class="item-location"> ${item.location}</p>
         </div>
       </div>
     `).join('');

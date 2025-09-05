@@ -1,4 +1,4 @@
-﻿export const router = {
+export const router = {
   init() {
     console.log('Router initialized');
     this.loadPage('home');
