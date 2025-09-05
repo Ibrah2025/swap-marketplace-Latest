@@ -224,7 +224,7 @@ function renderHomePage(user) {
         .swap-cta__halo{ animation:none; }
         .nav-icon, .nav-btn{ transition:none; }
       }
-    </style>
+    
   `;
 
   loadItems();
@@ -240,7 +240,11 @@ async function loadItems() {
       <img src="${item.photoURL}" style="width: 100%; height: 120px; object-fit: cover;">
       <div style="padding: 10px;">
         <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">${item.title}</div>
+<<<<<<< HEAD
         <div style="font-size: 11px; color: #666;"> ${item.location}</div>
+=======
+        <div style="font-size: 11px; color: #666;">ðŸ“ ${item.location}</div>
+>>>>>>> 87fb09fc2003a58e1243cdc1274a3eb44103e670
       </div>
     </div>
   `).join('');
@@ -284,6 +288,14 @@ window.showSearch = () => {
   document.getElementById("modalContainer").innerHTML = searchComponent.render();
 };
 
+<<<<<<< HEAD
+=======
+window.showSwaps = () => {
+  alert("Tausch-Ãœbersicht - Kommt bald!");
+  setActiveNav("swaps");
+};
+
+>>>>>>> 87fb09fc2003a58e1243cdc1274a3eb44103e670
 window.showFavorites = () => {
   alert("Favoriten - Kommt bald!");
   setActiveNav("favorites");
@@ -291,7 +303,11 @@ window.showFavorites = () => {
 
 window.showProfile = () => {
   setActiveNav("me");
+<<<<<<< HEAD
   if (confirm("Mchten Sie sich abmelden?")) {
+=======
+  if (confirm("MÃ¶chten Sie sich abmelden?")) {
+>>>>>>> 87fb09fc2003a58e1243cdc1274a3eb44103e670
     firebaseService.logout();
   }
 };
@@ -341,7 +357,11 @@ window.submitItem = async () => {
   const locationEl = document.getElementById("itemLocation");
   const title = titleEl ? titleEl.value : "";
   const category = categoryEl ? categoryEl.value : "";
+<<<<<<< HEAD
   if (!title || !category) { alert("Bitte flle alle Pflichtfelder aus"); return; }
+=======
+  if (!title || !category) { alert("Bitte fÃ¼lle alle Pflichtfelder aus"); return; }
+>>>>>>> 87fb09fc2003a58e1243cdc1274a3eb44103e670
   const itemData = {
     title,
     category,
