@@ -1,4 +1,4 @@
-// Mock Firebase Service with localStorage persistence
+﻿// Mock Firebase Service with localStorage persistence
 class MockFirebaseService {
   constructor() {
     this.currentUser = this.loadUser();

@@ -1,4 +1,4 @@
-// Firebase configuration
+﻿// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAk3wCKdd0PwtwttGI-OnPLfzpr7-ibj5Q",
   authDomain: "swap-test-marketplace.firebaseapp.com",

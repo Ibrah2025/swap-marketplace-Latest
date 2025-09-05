@@ -1,4 +1,4 @@
-import firebaseService from "../services/firebase.service.mock.js";
+﻿import firebaseService from "../services/firebase.service.mock.js";
 import store from "../store/store.js";
 
 export class AddItemComponent {

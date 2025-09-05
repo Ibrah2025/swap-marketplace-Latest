@@ -1,4 +1,4 @@
-import { getCategoryById } from './Categories.js';
+﻿import { getCategoryById } from './Categories.js';
 import firebaseService from '../services/firebase.service.mock.js';
 
 export class CategoryPage {

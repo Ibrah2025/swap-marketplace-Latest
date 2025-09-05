@@ -1,4 +1,4 @@
-console.log("SWAP initializing...");
+﻿console.log("SWAP initializing...");
 
 import firebaseService from "./services/firebase.service.mock.js";
 import store from "./store/store.js";

@@ -17,7 +17,7 @@ export class ItemDetailPage {
       <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: white; z-index: 1000; overflow-y: auto;">
         <header style="background: #007185; color: white; padding: 12px; position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between;">
           <div style="display: flex; align-items: center;">
-            <button onclick="window.closeItemDetail()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">←</button>
+            <button onclick="window.closeItemDetail()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">button>
             <h1 style="margin: 0; font-size: 20px;">Artikel Details</h1>
           </div>
           <button onclick="window.toggleFavorite('${item.id}')" style="background: none; border: none; color: white; font-size: 24px;">

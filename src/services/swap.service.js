@@ -1,4 +1,4 @@
-class SwapService {
+﻿class SwapService {
   constructor() {
     this.proposals = this.loadProposals();
   }

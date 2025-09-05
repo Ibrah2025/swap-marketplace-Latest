@@ -1,4 +1,4 @@
-class ChatService {
+﻿class ChatService {
   constructor() {
     this.conversations = this.loadConversations();
     this.messages = this.loadMessages();

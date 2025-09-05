@@ -11,7 +11,7 @@ export class PhotoUploadComponent {
         <!-- Header -->
         <header style="background: #007185; color: white; padding: 12px; display: flex; align-items: center; justify-content: space-between;">
           <div style="display: flex; align-items: center;">
-            <button onclick="window.closePhotoUpload()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">Ã¢â€ Â</button>
+            <button onclick="window.closePhotoUpload()" style="background: none; border: none; color: white; font-size: 24px; margin-right: 15px;">←</button>
             <h1 style="margin: 0; font-size: 20px;">Neuer Artikel</h1>
           </div>
           <button onclick="window.submitItem()" style="background: none; border: none; color: white; font-weight: 600;">

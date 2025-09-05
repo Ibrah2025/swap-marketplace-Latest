@@ -1,4 +1,4 @@
-import { categories } from '../components/Categories.js';
+﻿import { categories } from '../components/Categories.js';
 import firebaseService from '../services/firebase.service.mock.js';
 
 export class HomePage {

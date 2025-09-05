@@ -1,4 +1,4 @@
-import chatService from "../services/chat.service.js";
+﻿import chatService from "../services/chat.service.js";
 
 export class ChatWindow {
   constructor(conversationId) {

@@ -1,4 +1,4 @@
-export class SearchComponent {
+﻿export class SearchComponent {
   constructor() {
     this.searchQuery = '';
     this.activeFilters = {

@@ -1,4 +1,4 @@
-export const categories = [
+﻿export const categories = [
   { id: 'elektronik', name: 'Elektronik', icon: '', color: '#4CAF50' },
   { id: 'mode', name: 'Mode', icon: '', color: '#E91E63' },
   { id: 'haushalt', name: 'Haushalt', icon: '', color: '#FF9800' },

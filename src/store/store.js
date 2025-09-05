@@ -1,4 +1,4 @@
-class Store {
+﻿class Store {
   constructor() {
     this.state = {
       user: null,

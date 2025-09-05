@@ -1,4 +1,4 @@
-class SearchService {
+﻿class SearchService {
   constructor() {
     this.searchHistory = this.loadSearchHistory();
   }

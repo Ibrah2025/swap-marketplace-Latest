@@ -1,4 +1,4 @@
-import firebaseService from "../services/firebase.service.mock.js"; // Using mock for now
+﻿import firebaseService from "../services/firebase.service.mock.js"; // Using mock for now
 import store from "../store/store.js";
 
 export class AuthComponent {

@@ -1,4 +1,4 @@
-export class ItemCard {
+﻿export class ItemCard {
   constructor(item) {
     this.item = item;
   }

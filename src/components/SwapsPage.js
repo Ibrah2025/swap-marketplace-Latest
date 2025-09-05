@@ -1,4 +1,4 @@
-export class SwapsPage {
+﻿export class SwapsPage {
   constructor() {
     this.activeTab = "incoming"; // 'incoming' | 'outgoing' | 'completed'
     this.swapProposals = this.loadSwapProposals();

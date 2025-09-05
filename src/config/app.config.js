@@ -1,4 +1,4 @@
-export const config = {
+﻿export const config = {
   appName: 'SWAP',
   tagline: 'Tauschen statt kaufen',
   version: '2.0.0',

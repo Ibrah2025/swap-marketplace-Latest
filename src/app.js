@@ -1,4 +1,4 @@
-import { config } from './config/app.config.js';
+﻿import { config } from './config/app.config.js';
 import firebaseService from './services/firebase.service.mock.js';
 import store from './store/store.js';
 import { AuthComponent } from './components/Auth.js';

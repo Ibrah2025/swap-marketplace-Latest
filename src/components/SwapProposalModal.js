@@ -1,4 +1,4 @@
-import firebaseService from "../services/firebase.service.mock.js";
+﻿import firebaseService from "../services/firebase.service.mock.js";
 import swapService from "../services/swap.service.js";
 
 export class SwapProposalModal {
