@@ -220,7 +220,7 @@ function renderHomePage(user) {
         .swap-cta__halo{ animation:none; }
         .nav-icon, .nav-btn{ transition:none; }
       }
-    </style>
+    
   `;
 
   loadItems();
@@ -236,7 +236,7 @@ async function loadItems() {
       <img src="${item.photoURL}" style="width: 100%; height: 120px; object-fit: cover;">
       <div style="padding: 10px;">
         <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">${item.title}</div>
-        <div style="font-size: 11px; color: #666;">📍 ${item.location}</div>
+        <div style="font-size: 11px; color: #666;">ðŸ“ ${item.location}</div>
       </div>
     </div>
   `).join('');
@@ -281,7 +281,7 @@ window.showSearch = () => {
 };
 
 window.showSwaps = () => {
-  alert("Tausch-Übersicht - Kommt bald!");
+  alert("Tausch-Ãœbersicht - Kommt bald!");
   setActiveNav("swaps");
 };
 
@@ -292,7 +292,7 @@ window.showFavorites = () => {
 
 window.showProfile = () => {
   setActiveNav("me");
-  if (confirm("Möchten Sie sich abmelden?")) {
+  if (confirm("MÃ¶chten Sie sich abmelden?")) {
     firebaseService.logout();
   }
 };
@@ -342,7 +342,7 @@ window.submitItem = async () => {
   const locationEl = document.getElementById("itemLocation");
   const title = titleEl ? titleEl.value : "";
   const category = categoryEl ? categoryEl.value : "";
-  if (!title || !category) { alert("Bitte fülle alle Pflichtfelder aus"); return; }
+  if (!title || !category) { alert("Bitte fÃ¼lle alle Pflichtfelder aus"); return; }
   const itemData = {
     title,
     category,
